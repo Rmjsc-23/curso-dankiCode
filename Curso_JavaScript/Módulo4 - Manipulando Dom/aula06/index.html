@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+
+        <style>
+
+            .conteudo h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo p{
+                overflow: hidden;
+                height: auto;
+            }
+
+            .mostrar{
+                color: red;
+                height: 200px !important;
+            }
+        </style>
+
+        <div class="conteudo">
+            <h2>titulo do conteúdo <span>Ver Mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Aliquam mollitia vel, nam 
+                repudiandae quaerat eum voluptatem nobis nisi 
+                eveniet inventore illum velit quibusdam quo dignissimos 
+                aut fugiat corporis rem adipisci! Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Praesentium
+                ipsa perferendis odio minus enim consectetur animi. 
+                A culpa eveniet praesentium aliquam amet impedit iste, fuga 
+                illum alias. Autem, explicabo distinctio?</p>
+        </div>
+
+        <script>
+
+            document.querySelector('.conteudo span')
+            .addEventListener('click', function(){
+                document.querySelector('.conteudo p').classList.add('mostrar')
+            })
+
+        </script>
+    </body>
+</html>

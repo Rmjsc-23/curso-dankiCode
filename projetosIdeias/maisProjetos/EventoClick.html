@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-left: 0;
+                cursor: pointer;
+            }
+
+            .animEsquerda{
+                transition: 1s;
+                margin-left: 90px;
+                background-color: green;
+            }
+
+            .animAbaixo{
+                transition: 1s;
+                margin-top: 90px;
+                background-color: orange;
+            }
+        </style>
+
+        <div class="box"></div>
+        <script>
+            var b = document.querySelectorAll('.box')[0];
+            
+        
+            b.addEventListener('click', ()=>{
+                b.classList.add('animEsquerda'); //Quando clicar em cima da box, o animEsquerda vai ser invocado
+            })
+
+          
+            b.addEventListener('mouseenter', ()=>{
+                b.classList.add('animAbaixo'); //Quando clicar em cima da box, o animEsquerda vai ser invocado
+            })
+
+            b.addEventListener('mouseout', ()=>{
+                b.classList.add('animAbaixo'); //Quando clicar em cima da box, o animEsquerda vai ser invocado
+            })
+
+        
+
+        </script>
+    </body>
+</html>

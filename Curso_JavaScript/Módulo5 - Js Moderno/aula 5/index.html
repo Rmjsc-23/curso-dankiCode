@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            //Spread
+            /*Neste exemplo colocamos o spread que são os ... para adicionar
+            os outros valores, que estão dentro do objeto nomes, antes dos valores
+            do objeto objetos*/
+            var nomes = [
+                {
+                    nome: 'João'
+                },
+                {
+                    nome:'Felipe'
+                }
+            ];
+
+            const objetos = [...nomes,{
+                nome: 'Felipe'
+            },
+            {
+                nome: 'Guilherme'
+            }
+        ];
+            
+            console.log(objetos)
+
+        </script>
+    </body>
+</html>

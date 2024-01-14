@@ -1,0 +1,58 @@
+//curso em Video
+<html>
+    <body>
+        <script>
+            /*
+            //Função de soma 
+            function Soma(n1=0, n2=0){
+                return n1 + n2
+            }
+
+            console.log(Soma(2, 3));
+            */
+
+
+            /*
+            //Calculadora de número fatorial
+            // 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+            function fatorial(n) {
+                let fat = 0
+                for(let c = n; c > 1; c--){
+                    fat *= c
+                }
+                return fat
+            }
+
+            cosole.log(fatorial(5));
+            */
+
+
+            //Recursividade
+
+            function fatorial(n) {
+                if (n == 1) {
+                    return 1
+                } else{
+                    return n * fatorial(n-1)
+                }
+            }
+
+        cosole.console.log(fatorial(5));
+
+        /*
+
+         5! = 5 x 4 x 3 x 2 x 1 = 120
+         ou
+         5! = 5 x 4!
+
+         n! = n x (n-1)!
+         1! = 1
+
+         */
+
+
+
+        </script>
+    </body>
+</html>

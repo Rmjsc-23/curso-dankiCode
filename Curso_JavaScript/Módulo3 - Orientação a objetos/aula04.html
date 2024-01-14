@@ -1,0 +1,104 @@
+<html>
+    <body>
+        <script>
+            /*
+            class Animal{
+                constructor(){
+                    this.nome = 'cachorro';
+                }
+            }
+
+            animal = new Animal();
+
+            alert(animal.nome);
+            */
+
+            /*
+            // Utilizando um outro método para invocar á variável
+            class Animal{
+                constructor(nome){
+                    this.nome = nome;
+                }
+            }
+
+            animal = new Animal('Gato');
+
+            alert(animal.nome);
+            */
+
+            /*
+            //Criando uma função dentro do objeto
+            class Animal{
+                constructor(nome){
+                    this.nome = nome
+                }
+
+                printNome(){
+                    return this.nome;
+                }
+            }
+
+            animal = new Animal('Gato')
+
+            alert(animal.printNome())
+            */
+
+            /*
+            // Criando uma 2 classes, uma classe herda tudo da primeira classe
+            class Animal{
+                constructor(nome){
+                    super(nome)
+                }
+
+                printNome(){
+                    return this.nome
+                }
+            }
+
+            class Cachorro extends Animal{
+                constructor(nome){
+                    super(nome)
+                }
+            }
+
+            cachorro = new Cachorro('Maltes')
+
+            alert(cachorro.printNome())
+            */
+
+
+            // Criando atributos para apenas uma classe
+            class Animal{
+                constructor(nome){
+                    this.nome = nome
+                }
+                // Print Nome
+                printNome(){
+                    return this.nome
+                }
+            }
+
+            class Cachorro extends Animal{
+                constructor(nome){
+                    super(nome)
+                    this.raca = "Bulldog"
+                }
+                // Print Raca
+                printRaca(){
+                    return this.raca
+                }
+            }
+
+            cachorro = new Cachorro('Rocky')
+
+            // Print Raca
+            alert(cachorro.printRaca())
+
+            // Print Nome
+            alert(cachorro.printNome())
+            
+
+            
+        </script>
+    </body>
+</html>

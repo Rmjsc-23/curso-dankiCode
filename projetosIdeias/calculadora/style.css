@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#area{
+    display: flex;
+    background-color: green;
+    max-width: 20vw;
+    max-height: 20vh;
+    width: 20vw;
+    height: 10vw;
+    margin: 10px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}

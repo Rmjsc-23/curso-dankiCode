@@ -1,0 +1,22 @@
+<html>
+    <body>
+        
+        <div class="teste">
+            <div class="inside-testes">Texto</div>
+        </div>
+        <div class="teste">
+            <div class="inside-testes">Texto2</div>
+        </div>
+        
+        <script>
+            //Aqui estamos selecionando às duas classes
+            var els = document.querySelectorAll('.teste .inside-testes');
+            //Aqui estamos alterando a cor da primeira classe
+            els[0].style.color = 'red';
+            //Aqui estamos alterando o nome da segunda classe
+            els[1].innerHTML = 'Outro nome';
+        </script>
+
+
+    </body>
+</html>

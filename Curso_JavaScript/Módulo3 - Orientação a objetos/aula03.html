@@ -1,0 +1,116 @@
+<html>
+    <body>
+        <script>
+            
+            /*
+            // Usando Função dentro de um objeto
+            function Pessoa(){
+                this.nome = "Ramon";
+                this.idade = 17 ;
+                this.printNome = function(){
+                    alert(this.nome);
+                }
+            }
+
+            var pessoa = new Pessoa();
+
+            pessoa.printNome();
+            */
+
+
+
+             
+            /*
+            // Usando Parâmetro e instanciando mais eum objeto
+            function Pessoa(){
+                this.nome = "Ramon";
+                this.idade = 17 ;
+                this.printNome = function(numero){
+                    alert(numero)
+                }
+            }
+
+            //define o paramêtro numero
+            var pessoa = new Pessoa();
+
+            pessoa.printNome(10)
+
+            //podemos também invocar outra váriavel
+            var pessoa_2 = new Pessoa();
+            pessoa_2.nome = "João"
+            
+            pessoa.printNome(pessoa_2.nome)
+            */
+
+
+
+
+
+            /*
+            // Maneira mais prática de instanciar e invocars objetos
+            function Animal(nome, peso){
+                this.nome = nome;
+                this.peso = peso;
+            }
+
+            animal1 = new Animal("Cachorro", "12kg");
+
+            animal2 = new Animal("Gato", "6kg");
+
+            alert(animal1.nome + animal1.peso);
+
+            alert(animal2.nome + animal2.peso);
+            */
+
+
+            
+            /*
+            // Usando o "if" para aparecer outro valor se o objeto não for instanciado
+            function Animal(nome, peso){
+                if(nome == undefined){
+                    nome = "Cachorro";
+                }
+
+                if(peso == undefined){
+                    peso = "6kg";
+                }
+
+                this.nome = nome
+                this.peso = peso
+            }
+
+            animal = new Animal();
+
+            alert(animal.nome)
+            */
+
+
+            // Passando um objeto como parâmetro. Se tiver dúvida volta na aula 03 
+            function Pessoa(){
+                this.nome = "Ramon";
+                this.idade = 17;
+                this.printNome = function(numero){
+                    alert(numero)
+                };
+                this.returnAmimal = function(animal){
+                    return animal;
+                }
+            }
+
+            function Animal(){
+                this.nome = "Cachorro";
+                this.raca = "Bulldog";
+            }
+
+            var pessoa = new Pessoa();
+
+            var animal = new Animal();
+
+            animal.raca = "Maltes";
+
+            alert(pessoa.returnAnimal(anima1).raca);
+
+
+        </script>
+    </body>
+</html>

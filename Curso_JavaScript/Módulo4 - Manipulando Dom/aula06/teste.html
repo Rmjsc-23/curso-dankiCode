@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteudo{
+            margin-top: 10px;
+        }
+
+       .titulo{
+        display: flex;
+        width: 90vw;
+        height: 6vh;
+        margin: auto;
+        align-items: center;
+        background-color: black;
+        border-radius: 20px;
+        color: #fff;
+        justify-content: center;
+        gap: 8px;
+       }
+
+       #veja{
+        font-size: 15px;
+        padding-top: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+       }
+
+       #veja:hover{
+        font-size: 15px;
+        padding-bottom: 8px;
+        background-color: rgba(51, 20, 130, 0.81);
+        border-radius: 10px;
+       }
+
+       .texto{
+        margin-top: 10px;
+        text-align: center;
+       }
+
+       .texto p{
+        overflow: hidden;
+        height: 8px;
+        transition: 1s;
+       }
+
+       .altura{
+        height: 200px !important; 
+       }
+       
+    </style>
+    
+    <div class="conteudo">
+      <div class="titulo">
+        <h2 id="destaque">Veja os destaques</h2>
+        <h2 id="veja">Clique Aqui</h2>
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Temporibus cum quia dignissimos tempore molestiae unde 
+            reprehenderit minus quae aliquam. Doloribus magni cum 
+            dolorem earum consectetur laboriosam quos blanditiis.</p>
+        </div>
+    </div>
+
+    <script>
+
+            var mostrar = document.getElementById('veja');
+
+            mostrar.addEventListener('click', function(){
+                document.querySelector('.texto p').classList.add('altura')
+            })
+
+    </script>
+</body>
+</html>

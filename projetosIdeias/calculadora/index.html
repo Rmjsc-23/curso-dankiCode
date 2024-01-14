@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 10</title>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="enter()" onmouseleave="sair()">
+        iteraja...
+    </div>
+
+    <script>
+        // Eventos criados para a interação
+        var a = window.document.getElementById('area');
+
+        function clicar(){
+            a.innerText = 'Clicou!';
+            a.style.backgroundColor = 'red'
+        }
+
+        {
+            function enter(){
+            a.innerText = 'Entrou!'
+            }
+        }
+
+        {
+            function sair(){
+             a.innerText = "Saiu!"
+             a.style.backgroundColor = 'green'
+            }
+        }
+    </script>
+</body>
+</html>

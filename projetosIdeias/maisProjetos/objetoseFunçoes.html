@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script>
+
+            var nome = prompt('Qual o seu Nome?')
+            while(nome != "Ramon"){
+                alert('Nome incorreto!');
+                var nome = prompt('Insira seu nome novamente:');
+            }
+
+            var senha = prompt('Insira a senha:');
+            while(senha != 23230212){
+                alert('Senha incorreta!');
+                var senha = prompt('Insira a senha correta!');
+            }
+
+            function Perfil() {
+                this.nome = "Eduardo";
+                this.idade = "17";
+                this.casa = ['Bairro Tal', 'Casa Tal'];
+                this.moradia = function(numero){
+                    alert(this.casa[0] +" "+ numero);
+            }
+        }
+
+            var pessoa = new Perfil();
+
+            pessoa.moradia(10);
+
+            
+        </script>
+    </body>
+</html>

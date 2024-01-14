@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            
+          /* Hoje em dia usamos com mais 
+          frequência as Arrow functions ()=>*/
+            function testes(){
+
+            }
+            const testes = ()=>{
+
+            }
+
+         //Para passar parâmetro dentro da arrow function
+         const testes2 = (idade)=>{
+            alert(idade)
+         }
+
+          testes2('17 anos de idade')
+
+
+
+        /* Aqui vamos criar algo mais complexo, vamos passar um
+        parametro e depois vamos chamálo dentro de uma função*/
+        const testes3 = (texto, parametro1)=>{
+            parametro1(texto)
+        }
+
+        testes3('Olá Mundo', (texto)=>{
+            alert(texto)
+        });
+        </script>
+    </body>
+</html>

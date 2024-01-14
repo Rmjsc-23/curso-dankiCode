@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <script>
+            var num1 = prompt('Informorme o número de entrada!');
+
+            var sinal = prompt('Informe o sinal da operação');
+
+            while( sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+                alert('Informe Um sinal (+, -, /, *)')
+                var sinal = prompt('Informe novamente o ninal da operação');
+            }
+
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+
+            var num2 = prompt('Informe o último número!');
+
+            var resultado = 0;
+            var vizinhos = 0;
+            var vizinhos2 = 0;
+
+            if(sinal == '-'){
+                resultado = num1 - num2
+                vizinhos = resultado - 1 
+                vizinhos2 = resultado + 1
+            }else if(sinal == '+'){
+                resultado = num1 + + num2
+                vizinhos =  resultado - 1 
+                vizinhos2 = resultado + 1
+            }else if(sinal =='/'){
+                resultado = num1 / num2
+                vizinhos = resultado - 1 
+                vizinhos2 = resultado + 1
+            }else if(sinal == '*'){
+                resultado = num1 * num2
+                vizinhos = resultado - 1 
+                vizinhos2 = resultado + 1
+            }
+
+            alert(resultado);
+            alert('Os números vizinhos são: ' + vizinhos + ' ' + vizinhos2)
+
+            //O.b.s: Resolver esse problema 
+        </script>
+    </body>
+</html>

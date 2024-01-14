@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+
+            {
+                /*Tudo que for digitado aqui vai ficar definido 
+                apenas neste escopo*/
+
+                /*se a função for declarada deste modo, ainda poderemos
+                  chamá-la do lado de fora do escopo  */
+                let nome = "Paulo"
+
+                function chamarNome(){
+                    console.log(`O nome é: ${nome}`)
+                }
+
+                
+            }
+
+            chamarNome();
+
+
+            {
+
+                /*Se um let estiver criando uma função, então
+                você só pode acessá-la dentro do escopo*/
+                let idade = 17;
+
+                let chamarIdade = function(){
+                    console.log(idade);
+                }
+
+                chamarIdade();
+            }
+
+        </script>
+    </body>
+</html>

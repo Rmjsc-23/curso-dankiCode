@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-left: 0;
+                cursor: pointer;
+            }
+
+            .animEsquerda{
+                transition: 1s;
+                margin-left: 200px;
+                background-color: green;
+            }
+
+            .animAbaixo{
+                transition: 1s;
+                margin-top: 200px;
+                background-color: orange;
+            }
+        </style>
+
+        <div class="box"></div>
+        <script>
+            var b = document.querySelectorAll('.box')[0];
+            b.addEventListener('click', clicar)
+            b.addEventListener('dblclick', sair)
+            
+            function clicar() {
+                b.classList.add('animEsquerda')
+            }
+
+            function sair(){
+                b.classList.add('animAbaixo')
+            }
+            
+        
+        
+
+        </script>
+    </body>
+</html>

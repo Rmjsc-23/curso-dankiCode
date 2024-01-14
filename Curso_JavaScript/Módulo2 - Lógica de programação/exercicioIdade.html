@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+
+            var anoNascimento = prompt('Insira o Ano em que você nasceu:');
+            
+
+            while(anoNascimento >= 2023){
+                alert('Porfavor insira seus dados corretamente!');
+                var anoNascimento = prompt('Insira novamente o Ano em que você nasceu:');
+            }
+
+            var anoAtual = prompt('Insira o ano Atual:');
+
+            while(anoAtual > 2024){
+                alert('Porfavor insira o ano correto!');
+                var anoNascimento = prompt('Insira novamente o ano em que você está:');
+            }
+
+
+            var idadeFinal = anoAtual - anoNascimento
+
+               /* Dentro do Console*/
+            alert('A idade final é' +" "+ idadeFinal);
+            //ou
+            console.log('A idade final é:' +idadeFinal);
+            //ou
+            console.log('A idade final é:' + (anoAtual - anoNascimento));
+
+        </script>
+    </body>
+</html>
