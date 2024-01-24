@@ -48,4 +48,4 @@ os conhecimentos adquiridos para criar projetos mais complexos.
 Sinta-se à vontade para explorar, fazer fork ou contribuir para este repositório. Espero que esses recursos possam ser úteis para outros desenvolvedores 
 que estão começando sua jornada no mundo do desenvolvimento web.
 
-[Ramon Jorge]
+<Ramon Jorge />
